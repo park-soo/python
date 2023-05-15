@@ -1,0 +1,40 @@
+import os.path
+import os
+f = open("./data/textTest.txt", "r", encoding='UTF-8')
+print(f.read())
+f.close()
+
+
+os.chdir('C:/storage')
+print(os.getcwd())
+print(os.listdir('.'))
+os.mkdir('test')
+print(os.listdir('.'))
+os.chdir('test')
+print(os.getcwd())
+os.chdir('../')
+print(os.getcwd())
+os.rmdir('test')
+print(os.listdir('.'))
+
+os.makedirs('test2/test3')
+print(os.listdir('.'))
+os.chdir('test2')
+print(os.listdir('.'))
+os.chdir('../')
+os.removedirs('test2/test3')
+print(os.listdir('.'))
+
+
+print(dir(os.path))
+os.chdir('D:/python/python')
+print(os.getcwd())
+print(os.listdir('.'))
+print(os.path.abspath('17etc.py'))
+print(os.path.dirname('python/17etc.py'))
+print(os.path.exists('D:/python/python/17etc.py'))
+print(os.path.isfile('17etc.py'))
+print(os.path.isdir('17etc.py'))
+print(os.path.split('d:\\test\\test.txt'))
+print(os.path.join('c:\\text', 'text.txt'))
+print(os.path.getsize('17etc.py'))

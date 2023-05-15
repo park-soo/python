@@ -23,3 +23,15 @@ car1.door=10
 car1.display()
 car2.display()
 del car2
+
+import datetime
+from datetime import date, time
+
+today = date(2023,5,5)
+print(today, today.year, today.month, today.day)
+w = today.weekday()
+print(w)
+
+currTime = time(21,4,30)
+print(currTime, currTime.hour, currTime.minute, currTime.second)
+print(currTime.isoformat)
