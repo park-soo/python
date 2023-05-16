@@ -22,3 +22,6 @@ x=Member('Mike','Tom','VIP')
 x.printname()
 x.welcome()
         
+        
+        
+        

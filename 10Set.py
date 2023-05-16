@@ -40,3 +40,4 @@ d= b-a
 print(d)
 d= b.difference(a)
 print(d)
+
